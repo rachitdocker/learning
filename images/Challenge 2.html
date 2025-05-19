@@ -1,0 +1,69 @@
+
+<!-- saved from url=(0036)http://127.0.0.1:5500/challenge.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <title>Challenge 2</title>
+  <link href="./Challenge 2_files/converse.css" rel="stylesheet"></head>
+  <body>
+    <article class="product">
+      <header>
+        <h2 class="main-header">Converse Chuck Taylor All Star Low Top</h2>
+      </header>
+      <img src="./Challenge 2_files/challenges.jpg" alt="Chuck Taylor All Star Shoe" class="img">
+      <p class="price"><strong>$65.00</strong></p>
+      <p class="shipping">Free shipping</p>
+      <p style="margin-bottom: 10px">
+        Ready to dress up or down, these classic canvas Chucks are an everyday
+        wardrobe staple.
+      </p>
+      <a class="more-info" href="https://www.converse.com/">More information →</a>
+      <h3 class="details-title">Product details</h3>
+      <ul class="details-list">
+        <li class="list-item">Lightweight, durable canvas sneaker</li>
+        <li class="list-item">Lightly padded footbed for added comfort</li>
+        <li class="list-item">Iconic Chuck Taylor ankle patch</li>
+      </ul>
+      <button class="add-cart">Add to Cart</button>
+    </article>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
