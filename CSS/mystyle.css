@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.product {
+  width: 850px;
+  border: 5px solid #444;
+  margin: 40px auto;
+  position: relative;
+}
+
+.product div {
+  padding: 4px;
+}
+
+.main-header {
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #f8f8f8;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.img {
+  width: 287px;
+  height: 359px;
+  margin-bottom: 15px;
+}
+
+.item-price {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.free-shipping {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.free-shipping::after {
+  content: "Limited time deal";
+  font-size: 10px;
+  width: 140px;
+  height: 20px;
+  background-color: rgb(192, 1, 1);
+  color: #f8f8f8;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 2px;
+  position: absolute;
+  left: -70px;
+  top: -3px;
+  border-radius: 6px; /* Soft, rounded corners */
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 2px;
+  transform: rotate(-45deg);
+}
+
+.item-description {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+  /* margin-top: 40px; */
+}
+
+.item-list {
+  list-style-type: square;
+  margin-top: 10px;
+}
+
+.item-list li {
+  margin-bottom: 8px;
+  margin-left: 25px;
+}
+
+.item-list li:last-child {
+  margin-bottom: 12px;
+}
+
+.product-information {
+  margin-bottom: 16px;
+}
